@@ -185,7 +185,7 @@ public class sqlClient implements ActionListener{
 		if(e.getSource() == connectButton) {
 			
 			//validate root login information
-			if(user.equals("root") && paassword.equals("samantha") && selectedOption.equals("root.properties")) {
+			if(user.equals("root") && paassword.equals("password") && selectedOption.equals("root.properties")) {
 			     String url = "jdbc:mysql://localhost:3306/project3";
 				 String username = user;
 				 String password = paassword;
@@ -255,7 +255,7 @@ public class sqlClient implements ActionListener{
 		 if(e.getSource() == exeSQL) {
 			 
 			//handling the execute query as a root user
-			 if(user.equals("root") && paassword.equals("samantha") && selectedOption.equals("root.properties")){
+			 if(user.equals("root") && paassword.equals("password") && selectedOption.equals("root.properties")){
 					String url = "jdbc:mysql://localhost:3306/project3";
 					 String username = user;
 					 String password = paassword;
